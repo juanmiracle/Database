@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+    <HEAD>
+        <TITLE> Online Shipping </TITLE> 
+          <br>
+      
+            <img style = "width:100%" src="img/1.jpg">
+         <br>
+    </HEAD>
+  
+
+ <BODY bgcolor ="#FFFAFA">
+ 	<H1 align="center"> Enjoy Your Shopping! </H1>
+	 <H4 > 
+
+  	<H1>
+            <DIV style="text-align:center;"> 
+
+            </DIV>
+    	</H1> 	
+	</H4>
+<hr />
+Clike here to login in
+<br>
+<a href="loginPage.html"> clike to login in  </a>
+<p>
+<hr />
+Clike here to list all tables in the database.
+<br>
+<a href="list_tables.php"> list all tables in the database </a>
+<hr />
+Clike here to list customers (show their ID,names and number of orders) who purchased more than two orders.
+<br>
+<a href="showUserWithManyOrders.php"> list all customers (show their ID,names and total number of orders) who purchased more than two orders. </a>
+<hr />
+Clike here to list products (show their ID and names) who were purchased more than twice.
+<br>
+<a href="showProductsWithManyOrders.php"> list products (show their ID, names  and quantity of sold) which being purchased more than twice. </a>
+<hr />
+Clike here to list products (show productID, name and description) whose average review score is 5 (full score)
+<br>
+<a href="HighRateProducts.php"> list products (show their ID, names, description) whose average review score is 5 </a>
+<hr />
+Enter the userID and then click the button to see the attributes of the user 
+(eg. Tomas0808, Lucy1010, Eason1212).
+ 
+
+            <form   method="post" action="list_attrs.php">
+
+              <label for="fname"> list attributes </lable>
+              <input type="text" name="fname" id="fname" /> 
+
+             <button value="submit"> list </button>
+
+            </form>
+<hr />
+Enter the productID and then click the button to see the attributes of the Item 
+(eg. SP00000001, SP00000003, SP00000011).
+
+            <form   method="post" action="list_itemattrs.php">
+
+              <label for="fname"> list attributes </lable>
+              <input type="text" name="fname" id="fname" /> 
+
+             <button value="submit"> list </button>
+
+            </form>
+<hr />
+Find customers (show their userID) who share the same username with you, but have different userID(primary Key, Unique) (eg. Lucy, Edward, Ross, Michelle, Jessica)
+
+            <form   method="post" action="SameUserName.php">
+
+               <label for="fname"> list customer </lable>
+               <input type="text" name="fname" id="fname" /> 
+               <button value="submit"> Find </button>
+
+            </form>
+<hr />
+ </BODY>
+</html>

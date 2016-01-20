@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+    <HEAD>
+        <TITLE> Online Shipping </TITLE> 
+          <br>
+      
+            <img style = "width:100%" src="img/1.jpg">
+         <br>
+    </HEAD>
+  
+ <BODY bgcolor ="#FFFAFA">
+ 	<H1 align="center"> Enjoy Your Shopping! </H1>
+	 <H4 >
+  	<H1>
+          <DIV style="text-align:center;"> 
+          </DIV>
+    	</H1> 	
+	</H4>
+<hr />
+Click here to login out
+<br>
+<a href="logOut.php"> clike to login out  </a>
+<p>
+<hr />
+Click here to cancle you account (delete user) 
+<br>Be careful, if you cancle your account, you can not login in any more!
+<br>
+<a href="deleteUser.php"> clike to cancle account </a>
+<p>
+<hr />
+Click here to change your information (update user information, except password)
+<br>
+<a href="listUser.php"> clike to modify information  </a>
+<p>
+<hr />
+Click here to change your password  (update password)
+<br>
+<a href="changeCode.php"> clike to change password </a>
+<p>
+<hr />
+Click here to add a new product    (insert product)
+<br>
+<a href="addItem.html"> clike to add product </a>
+<hr />
+<br>Find products that are on some key Words (i.e., the product name contains 'Apple', 'Lipstick', 'iPhone')
+<br>(you can modify the information of the product after finding it) (update product)
+            <form  method="post" action="list_AppleItem.php">
+
+               <label for="fname"> list product </lable>
+               <input type="text" name="fname" id="fname" /> 
+               <button value="submit"> Find </button>
+
+            </form>
+<hr />
+Click here to create a new review     (insert review)
+<br>
+<a href="addReview.html"> clike to create new Review </a>
+<hr />
+<br>Select the customer (show their ID and product) who you are interested in the products they bought
+ <br>(you can buy the product that they bought before)       (insert order)
+<form method=get action="UserAndProduct.php">
+<select name="userID">
+                       <option value="Martina" >Martina</option>
+                       <option value="Edward0018" >Edward0018</option>
+                       <option value="Maggie">Maggie</option>
+                       <option value="Tomas0808">Tomas0808</option>
+                       <option value="Lucy1010">Lucy1010</option>
+                       <option value="Eason1212">Eason1212</option>
+</select>
+<br>
+<input type="submit" value="Search">
+</form>
+<hr />
+Find the review information (show userID, review comments and rating score) for the item. (eg. SP00000001, SP00000003, SP00000010). (some may only have one comment, and SP00000010 has two comments)
+(update review and delete review)
+            <form   method="post" action="showItemReview.php">
+
+               <label for="fname"> list comment </lable>
+               <input type="text" name="fname" id="fname" /> 
+               <button value="submit"> Find </button>
+
+            </form>
+<hr />
+Clike here to list all tables in the database.
+<br>
+<a href="list_tables.php"> list all tables in the database </a>
+<hr />
+Clike here to list customers (show their ID,names and number of orders) who purchased more than two orders.
+<br>
+<a href="showUserWithManyOrders.php"> list all customers (show their ID,names and total number of orders) who purchased more than two orders. </a>
+<hr />
+Clike here to list products (show their ID and names) who were purchased more than twice.
+<br>
+<a href="showProductsWithManyOrders.php"> list products (show their ID, names  and quantity of sold) which being purchased more than twice. </a>
+<hr />
+Clike here to list products (show productID, name and description) whose average review score is 5 (full score)
+<br>
+<a href="HighRateProducts.php"> list products (show their ID, names, description) whose average review score is 5 </a>
+<hr />
+Enter the userID and then click the button to see the attributes of the user 
+(eg. Tomas0808, Lucy1010, Eason1212).
+ 
+
+            <form   method="post" action="list_attrs.php">
+
+              <label for="fname"> list attributes </lable>
+              <input type="text" name="fname" id="fname" /> 
+
+             <button value="submit"> list </button>
+
+            </form>
+<hr />
+Enter the productID and then click the button to see the attributes of the Item 
+(eg. SP00000001, SP00000003, SP00000011).
+
+            <form   method="post" action="list_itemattrs.php">
+
+              <label for="fname"> list attributes </lable>
+              <input type="text" name="fname" id="fname" /> 
+
+             <button value="submit"> list </button>
+
+            </form>
+<hr />
+Find customers (show their userID) who share the same username with you, but have different userID(primary Key, Unique) (eg. Lucy, Edward, Ross, Michelle, Jessica)
+
+            <form   method="post" action="SameUserName.php">
+
+               <label for="fname"> list customer </lable>
+               <input type="text" name="fname" id="fname" /> 
+               <button value="submit"> Find </button>
+
+            </form>
+<hr />
+ </BODY>
+</html>
